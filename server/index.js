@@ -11,7 +11,10 @@ app.use(bodyParser.urlencoded({limit: "30mb", extended:true}))
 app.use(cors());
 
 app.get("/", (req, res)=>{
-    res.send("Coder Lady Fulya..");
+    res.json({
+        author: "Fulya Sarıyar Coder Lady Fulya)",
+        message: "Happy Coding Y'all :)"
+    })
 });
 
 
