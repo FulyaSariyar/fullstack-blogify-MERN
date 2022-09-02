@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv'
 import cors from 'cors';
+import postRoutes from "./routes/posts.js"
 
 
 const app = express();
@@ -18,6 +19,9 @@ app.get("/", (req, res)=>{
         message: "Happy Coding Y'all :)" 
     })
 });
+
+
+app.use("/posts", postRoutes);
 
 
 const PORT = process.env.PORT || 5000;
