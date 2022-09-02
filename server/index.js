@@ -15,7 +15,7 @@ app.use(cors());
 app.get("/", (req, res)=>{
     res.json({
         author: "Fulya Sarıyar Coder Lady Fulya)",
-        message: "Happy Coding Y'all :)"
+        message: "Happy Coding Y'all :)" 
     })
 });
 
